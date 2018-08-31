@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ISpy" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sBi-Vd-S3R">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="galaxy" translatesAutoresizingMaskIntoConstraints="NO" id="rc7-Kl-cZ1">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rc7-Kl-cZ1" firstAttribute="centerY" secondItem="sBi-Vd-S3R" secondAttribute="centerY" id="3ef-a2-IMS"/>
+                                    <constraint firstAttribute="trailing" secondItem="rc7-Kl-cZ1" secondAttribute="trailing" id="F1f-yQ-yNa"/>
+                                    <constraint firstItem="rc7-Kl-cZ1" firstAttribute="centerX" secondItem="sBi-Vd-S3R" secondAttribute="centerX" id="Pgc-8N-Ipx"/>
+                                    <constraint firstItem="rc7-Kl-cZ1" firstAttribute="leading" secondItem="sBi-Vd-S3R" secondAttribute="leading" id="RGC-IT-0ty"/>
+                                    <constraint firstAttribute="bottom" secondItem="rc7-Kl-cZ1" secondAttribute="bottom" id="gAd-Wd-xni"/>
+                                    <constraint firstItem="rc7-Kl-cZ1" firstAttribute="top" secondItem="sBi-Vd-S3R" secondAttribute="top" id="szk-VV-ZIz"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="sBi-Vd-S3R" secondAttribute="bottom" id="N5Z-oU-vJq"/>
+                            <constraint firstItem="sBi-Vd-S3R" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NVd-63-PaF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="sBi-Vd-S3R" secondAttribute="trailing" id="Z8C-XV-EOw"/>
+                            <constraint firstItem="sBi-Vd-S3R" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fsU-s5-TtJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="rc7-Kl-cZ1" id="OPp-LS-TS3"/>
+                        <outlet property="scrollView" destination="sBi-Vd-S3R" id="m5W-tM-0bw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79.200000000000003" y="132.68365817091455"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="galaxy" width="1920" height="1080"/>
+    </resources>
+</document>
